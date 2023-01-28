@@ -46,3 +46,15 @@ buttonAddToList.addEventListener('click', () => {
         inputEl.value = ''
     }
 })
+
+buttonComplete.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        listItemEl[index].classList.add('list__item-checked')
+    })
+})
+
+buttonRestoreItem.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        listItemEl[index].classList.remove('list__item-checked')
+    })
+})
