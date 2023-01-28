@@ -2,40 +2,87 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
+
+        <!-- FONT NUNITO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
         <title>To do list</title>
     </head>
     <body>
-        <div id="container">
-            <h1 class="title-list">To do List</h1>
-            <ul id="container-list">
-                <div class="add-item">
-                    <input type="text" placeholder="Eu quero fazer.." />
-                    <button>Adicionar</button>
-                </div>
-
-                <li class="item-list">
-                    <input type="checkbox" name="item" id="item1" />
-                    <label for="item1">item</label>
-                </li>
-                <li class="item-list">
-                    <input type="checkbox" name="item" id="item2" />
-                    <label for="item2">item</label>
-                </li>
-                <li class="item-list">
-                    <input type="checkbox" name="item" id="item3" />
-                    <label for="item3">item</label>
-                </li>
-                <li class="item-list">
-                    <input type="checkbox" name="item" id="item4" />
-                    <label for="item4">item</label>
-                </li>
-                <li class="item-list">
-                    <input type="checkbox" name="item" id="item5" />
-                    <label for="item5">item</label>
-                </li>
-            </ul>
+        <h1 class="c-list__title">Tarefas a fazer</h1>
+        <div class="c-list__wrapper">
+            <input
+                class="c-list__input"
+                type="text"
+                placeholder="Eu preciso fazer.."
+            />
+            <button class="c-list__btn btn">
+                <img
+                    src="./assets/icon-plus.svg"
+                    alt="Icone de adicionar uma tarefa"
+                />
+            </button>
         </div>
+        <ul class="c-list">
+            <li class="c-list__item">
+                <div class="c-list__text">Bebêr 3 litros de água</div>
+                <div class="c-list__buttons">
+                    <button class="btn c-list__check__button">
+                        <img
+                            src="./assets/icon-check.svg"
+                            alt="Concluir tarefa"
+                        />
+                    </button>
+                    <button class="btn c-list__delete__button">
+                        <img
+                            src="./assets/icon-delete.svg"
+                            alt="Deletar tarefa"
+                        />
+                    </button>
+                </div>
+            </li>
+            <li class="c-list__item">
+                <div class="c-list__text">Bebêr 3 litros de água</div>
+                <div class="c-list__buttons">
+                    <button class="btn c-list__check__button">
+                        <img
+                            src="./assets/icon-check.svg"
+                            alt="Concluir tarefa"
+                        />
+                    </button>
+                    <button class="btn c-list__delete__button">
+                        <img
+                            src="./assets/icon-delete.svg"
+                            alt="Deletar tarefa"
+                        />
+                    </button>
+                </div>
+            </li>
+            <li class="c-list__item">
+                <div class="c-list__text">Bebêr 3 litros de água</div>
+                <div class="c-list__buttons">
+                    <button class="btn c-list__check__button">
+                        <img
+                            src="./assets/icon-check.svg"
+                            alt="Concluir tarefa"
+                        />
+                    </button>
+                    <button class="btn c-list__delete__button">
+                        <img
+                            src="./assets/icon-delete.svg"
+                            alt="Deletar tarefa"
+                        />
+                    </button>
+                </div>
+            </li>
+        </ul>
     </body>
 </html>
