@@ -13,74 +13,176 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
         <title>To do list</title>
     </head>
     <body>
-        <h1 class="c-list__title">Tarefas a fazer</h1>
-        <div class="c-list__wrapper">
-            <input
-                class="c-list__input"
-                type="text"
-                placeholder="Eu preciso fazer.."
-            />
-            <button class="c-list__btn btn">
-                <img
-                    src="./assets/icon-plus.svg"
-                    alt="Icone de adicionar uma tarefa"
+        <header class="header">
+            <h1 class="header__title">Tarefas a fazer</h1>
+            <div class="header__wrapper">
+                <input
+                    class="header__wrapper__input"
+                    type="text"
+                    placeholder="Eu preciso fazer.."
+                    maxlength="40"
                 />
-            </button>
-        </div>
-        <ul class="c-list">
-            <li class="c-list__item">
-                <div class="c-list__text">Bebêr 3 litros de água</div>
-                <div class="c-list__buttons">
-                    <button class="btn c-list__check__button">
-                        <img
-                            src="./assets/icon-check.svg"
-                            alt="Concluir tarefa"
-                        />
-                    </button>
-                    <button class="btn c-list__delete__button">
-                        <img
-                            src="./assets/icon-delete.svg"
-                            alt="Deletar tarefa"
-                        />
-                    </button>
+                <button class="header__wrapper__button btn">
+                    <img
+                        src="./assets/icon-plus.svg"
+                        alt="Icone de adicionar uma tarefa"
+                    />
+                </button>
+            </div>
+        </header>
+        <ul class="list">
+            <li class="list__item list__item-checked">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
                 </div>
             </li>
-            <li class="c-list__item">
-                <div class="c-list__text">Bebêr 3 litros de água</div>
-                <div class="c-list__buttons">
-                    <button class="btn c-list__check__button">
-                        <img
-                            src="./assets/icon-check.svg"
-                            alt="Concluir tarefa"
-                        />
-                    </button>
-                    <button class="btn c-list__delete__button">
-                        <img
-                            src="./assets/icon-delete.svg"
-                            alt="Deletar tarefa"
-                        />
-                    </button>
+            <li class="list__item list__item-checked">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
                 </div>
             </li>
-            <li class="c-list__item">
-                <div class="c-list__text">Bebêr 3 litros de água</div>
-                <div class="c-list__buttons">
-                    <button class="btn c-list__check__button">
-                        <img
-                            src="./assets/icon-check.svg"
-                            alt="Concluir tarefa"
-                        />
-                    </button>
-                    <button class="btn c-list__delete__button">
-                        <img
-                            src="./assets/icon-delete.svg"
-                            alt="Deletar tarefa"
-                        />
-                    </button>
+            <li class="list__item">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list__item">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list__item list__item-checked">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list__item">
+                <div class="list__item__wrapper">
+                    <div class="list__item__text">Bebêr 3 litros de água</div>
+                    <div class="list__item__buttons">
+                        <button class="btn list__item__close__button">
+                            <img
+                                src="./assets/icon-close.svg"
+                                alt="Reverter conclusão da tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__check__button">
+                            <img
+                                src="./assets/icon-check.svg"
+                                alt="Concluir tarefa"
+                            />
+                        </button>
+                        <button class="btn list__item__delete__button">
+                            <img
+                                src="./assets/icon-delete.svg"
+                                alt="Deletar tarefa"
+                            />
+                        </button>
+                    </div>
                 </div>
             </li>
         </ul>
