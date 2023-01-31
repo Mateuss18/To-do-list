@@ -42,6 +42,10 @@ ul {
     @media (max-width: 421px) {
         width: 100%;
     }
+
+    @media (min-width: 2500px) {
+        padding: 0 24px;
+    }
 }
 
 .header {
@@ -53,6 +57,12 @@ ul {
         letter-spacing: 0.01em;
         color: #fefefe;
         margin-bottom: 40px;
+
+        @media (min-width: 2500px) {
+            font-size: 84px;
+            line-height: 98px;
+            margin-bottom: 80px;
+        }
     }
 
     &__wrapper {
@@ -60,6 +70,11 @@ ul {
         align-items: center;
         gap: 12px;
         margin-bottom: 30px;
+
+        @media (min-width: 2500px) {
+            gap: 24px;
+            margin-bottom: 60px;
+        }
 
         @media (max-width: 421px) {
             justify-content: space-between;
@@ -70,13 +85,21 @@ ul {
             border: solid 1px #219aa1;
             width: 350px;
             padding-left: 8px;
-
             font-weight: 500;
             font-family: "Nunito", sans-serif;
             font-size: 16px;
             line-height: 19px;
             letter-spacing: 0.01em;
             color: #070707;
+
+            @media (min-width: 2500px) {
+                height: 70px;
+                border: solid 2px #219aa1;
+                width: 700px;
+                padding-left: 16px;
+                font-size: 32px;
+                line-height: 38px;
+            }
 
             @media (max-width: 421px) {
                 width: 90%;
@@ -97,6 +120,14 @@ ul {
             background-color: #fff;
             transition: 400ms;
             border-radius: 4px;
+
+            @media (min-width: 2500px) {
+                font-size: 1.7em;
+                width: 70px;
+                height: 70px;
+                border: solid 4px #19c1ca;
+                border-radius: 8px;
+            }
 
             .fa-solid {
                 color: #288c91;
@@ -121,6 +152,10 @@ ul {
     flex-direction: column;
     gap: 12px;
 
+    @media (min-width: 2500px) {
+        gap: 24px;
+    }
+
     @media (max-width: 421px) {
         width: auto;
     }
@@ -137,6 +172,13 @@ ul {
         width: 100%;
         transition: 200ms;
 
+        @media (min-width: 2500px) {
+            border: solid 4px #18c4c4;
+            border-radius: 4px;
+            padding: 4px 16px;
+            height: 70px;
+        }
+
         &__wrapper {
             display: flex;
             align-items: center;
@@ -152,11 +194,20 @@ ul {
             max-width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            @media (min-width: 2500px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
         }
         &__buttons {
             display: flex;
             z-index: 1;
             gap: 6px;
+
+            @media (min-width: 2500px) {
+                gap: 12px;
+            }
 
             .btn {
                 display: flex;
@@ -167,6 +218,13 @@ ul {
                 height: 25px;
                 border: solid 1px transparent;
                 transition: 400ms;
+
+                @media (min-width: 2500px) {
+                    font-size: 1.7em;
+                    width: 50px;
+                    height: 50px;
+                    border: solid 2px transparent;
+                }
             }
         }
         &__check__button {
@@ -174,12 +232,12 @@ ul {
 
             &:hover {
                 transition: 500ms;
+                background-color: #fff;
+                border-color: #41d02a;
 
                 .fa-solid {
                     color: #41d02a;
                 }
-                background-color: #fff;
-                border-color: #41d02a;
             }
         }
         &__delete__button {
@@ -187,12 +245,12 @@ ul {
 
             &:hover {
                 transition: 500ms;
+                border-color: #e12121;
+                background-color: #fff;
 
                 .fa-solid {
                     color: #e12121;
                 }
-                border-color: #e12121;
-                background-color: #fff;
             }
         }
         &__close__button {
@@ -203,6 +261,10 @@ ul {
     &__item-checked {
         position: relative;
         width: 360px;
+
+        @media (min-width: 2500px) {
+            width: 720px;
+        }
 
         @media (max-width: 421px) {
             width: 90%;
@@ -215,6 +277,10 @@ ul {
             width: inherit;
             height: 33px;
 
+            @media (min-width: 2500px) {
+                height: 66px;
+            }
+
             @media (max-width: 421px) {
                 width: 100%;
             }
@@ -223,11 +289,21 @@ ul {
         .list__item__title {
             font-size: 14px;
             text-decoration: line-through;
+
+            @media (min-width: 2500px) {
+                font-size: 28px;
+            }
         }
 
         .btn {
             width: 22px;
             height: 22px;
+
+            @media (min-width: 2500px) {
+                width: 44px;
+                height: 44px;
+                font-size: 1.5em;
+            }
         }
 
         .list__item {
@@ -239,11 +315,11 @@ ul {
                 background-color: #e12121;
 
                 &:hover {
+                    border-color: #e12121;
+                    background-color: #cecece;
                     .fa-solid {
                         color: #e12121;
                     }
-                    border-color: #e12121;
-                    background-color: #cecece;
                 }
             }
 
@@ -255,12 +331,12 @@ ul {
 
                 &:hover {
                     transition: 500ms;
+                    background-color: #cecece;
+                    border-color: #313131;
 
                     .fa-solid {
                         color: #313131;
                     }
-                    background-color: #cecece;
-                    border-color: #313131;
                 }
             }
         }
@@ -291,6 +367,14 @@ ul {
         height: 131px;
         border-radius: 4px;
         margin: 0 12px;
+
+        @media (min-width: 2500px) {
+            gap: 40px;
+            width: 640px;
+            height: 262px;
+            border-radius: 8px;
+            margin: 0 24px;
+        }
     }
 
     &__title {
@@ -300,11 +384,20 @@ ul {
         width: 167px;
         text-align: center;
         letter-spacing: 0.01em;
+
+        @media (min-width: 2500px) {
+            font-size: 32px;
+            width: 334px;
+        }
     }
 
     &__buttons {
         display: flex;
         gap: 16px;
+
+        @media (min-width: 2500px) {
+            gap: 32px;
+        }
 
         .btn {
             height: 35px;
@@ -316,12 +409,23 @@ ul {
             border-radius: 4px;
             color: #fff;
             border: none;
+
+            @media (min-width: 2500px) {
+                height: 70px;
+                font-size: 28px;
+                line-height: 38px;
+                border-radius: 8px;
+            }
         }
     }
 
     &__cancel__button {
         width: 81px;
         background-color: #ee3a3a;
+
+        @media (min-width: 2500px) {
+            width: 162px;
+        }
 
         &:hover {
             background-color: #bf3434;
@@ -331,6 +435,10 @@ ul {
     &__confirm__button {
         width: 151px;
         background-color: #3ad021;
+
+        @media (min-width: 2500px) {
+            width: 302px;
+        }
 
         &:hover {
             background-color: #30a71b;
