@@ -58,7 +58,7 @@ buttonAddToList.addEventListener('click', (e) => {
     if (inputValue) {
         saveToDo(inputValue)
     } else {
-        alert('Ei adicione o nome da tarefa! 😠')
+        alert('Ei adicione o nome da tarefa')
     }
 })
 
