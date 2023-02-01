@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="./assets/favicon/favicon.png" height="130">
+  <img src="./assets/favicon/favicon.png" height="100">
 </div>
 
 <h1 align="center">
     To do List (Lista de tarefas)
 </h1>
 
-<h3 align="center">
+<h4 align="center">
   Aplicação de To do list (Lista de tarefas) com ela se é possível: adicionar tarefas que irão ser feitas no dia a dia, marcar elas como concluída e também excluí-las.
   Através do desenvolvimento dela foi possivel aplicar pela primeira vez a metodologia BEM (Bloco, Elemento e Modificador) no qual é fácil de assimilar, cria uma estrutura escalável e também facilita a manutenção do código.
-</h3>
+</h4>
 
 <p align="center">
     <a href="#🔗-clique-aqui-para-vizualizar-a-página!">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
