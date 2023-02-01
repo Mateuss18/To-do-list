@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/favicon.png">
+  <img src="./assets/favicon/favicon.png" height="130">
 </div>
 
 <h1 align="center">
@@ -18,10 +18,14 @@
     <a href="#📝-licença">Licença</a>
 </p>
 
+<br>
+
 ### [🔗 Clique aqui para vizualizar a página!](https://mateuss18.github.io/To-do-list/)
 <div align="center">
   <img src="./assets/readme-image.png">
 </div>
+
+<br>
 
 <div align="center">
   <img src="./assets/readme-gif.gif">
